@@ -55,6 +55,19 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
+
+        <service
+            android:name=".HajGhasem"
+            android:enabled="true"
+            android:exported="true"
+            android:label="Haj Ghasem"
+            android:icon="@drawable/haj_ghasem"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
