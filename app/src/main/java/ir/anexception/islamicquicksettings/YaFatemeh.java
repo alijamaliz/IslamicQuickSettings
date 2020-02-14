@@ -3,7 +3,7 @@ package ir.anexception.islamicquicksettings;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
-public class Tazhib extends TileService {
+public class YaFatemeh extends TileService {
     @Override
     public void onTileAdded() {
         super.onTileAdded();

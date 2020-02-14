@@ -18,11 +18,14 @@ public class YaMahdiTileService extends TileService {
 
         switch (getQsTile().getState()) {
             case Tile.STATE_ACTIVE: {
+                getQsTile().setState(Tile.STATE_INACTIVE);
                 break;
             }
             case Tile.STATE_INACTIVE: {
+                getQsTile().setState(Tile.STATE_ACTIVE);
                 break;
             }
         }
+        getQsTile().updateTile();
     }
 }
